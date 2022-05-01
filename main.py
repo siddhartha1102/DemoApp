@@ -1,5 +1,8 @@
 import streamlit as st
 import pandas as pd
+import os
+path = os.getcwd()
+path +=r"/qualifications.xlsx"
 st.title("D Siddhartha")
 from PIL import Image
 image = Image.open('Image.jpg')
@@ -25,7 +28,7 @@ with st.expander("Proficency "):
     st.header("Tools And platforms")
     st.write("Arduino IDE, Familiar with ESP 8266, Raspberry Pi")
 with st.expander("Education"):
-    st.table(pd.read_excel("qualifications.xlsx").astype(str),engine='openpyxl',)
+    st.table(pd.read_excel(path).astype(str),engine='openpyxl',)
 with st.expander("Blogs"):
     st.header("Python Blog")
     st.write('https://mypythonprograms11.blogspot.com/')
