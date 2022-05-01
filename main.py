@@ -28,7 +28,7 @@ with st.expander("Proficency "):
     st.header("Tools And platforms")
     st.write("Arduino IDE, Familiar with ESP 8266, Raspberry Pi")
 with st.expander("Education"):
-    st.table(pd.read_excel(path).astype(str),engine='openpyxl',)
+    st.table(pd.read_excel(path,engine='openpyxl').astype(str),)
 with st.expander("Blogs"):
     st.header("Python Blog")
     st.write('https://mypythonprograms11.blogspot.com/')
