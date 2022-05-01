@@ -1,2 +1,7 @@
 openpyxl=3.0.9
 pandas==0.25.3
+streamlit==1.8.0
+pandas==0.25.3
+numpy==1.18.1
+scikit-learn==0.23
+click<=8.0.4
